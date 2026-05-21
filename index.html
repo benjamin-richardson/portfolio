@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Benjamin Richardson</title>
+  <meta name="description" content="Benjamin Richardson — Melbourne, Australia" />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1a1a1a;
+      --muted: #666666;
+      --accent: #1a1a1a;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111111;
+        --fg: #f0f0f0;
+        --muted: #999999;
+        --accent: #f0f0f0;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    main {
+      max-width: 32rem;
+      width: 100%;
+    }
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 600;
+      margin: 0 0 0.25rem;
+      letter-spacing: -0.02em;
+    }
+    .location {
+      color: var(--muted);
+      margin: 0 0 2rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    li { margin: 0.4rem 0; }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid var(--muted);
+      padding-bottom: 1px;
+    }
+    a:hover { border-bottom-color: var(--accent); }
+    .label {
+      color: var(--muted);
+      display: inline-block;
+      width: 5.5rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Benjamin Richardson</h1>
+    <p class="location">Melbourne, Australia</p>
+    <ul>
+      <li>
+        <span class="label">Email</span>
+        <a href="mailto:benjam.richardson@gmail.com">benjam.richardson@gmail.com</a>
+      </li>
+      <li>
+        <span class="label">Instagram</span>
+        <a href="https://instagram.com/triangularsquare" target="_blank" rel="noopener">@triangularsquare</a>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
