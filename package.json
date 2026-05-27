@@ -4,9 +4,15 @@
   "private": true,
   "description": "Personal portfolio site for Benjamin Richardson",
   "scripts": {
-    "start": "serve . -l tcp://0.0.0.0:${PORT:-3000}"
+    "start": "serve . -l tcp://0.0.0.0:${PORT:-3000}",
+    "press:dev": "vitepress dev pages",
+    "press:build": "vitepress build pages",
+    "press:preview": "vitepress preview pages"
   },
   "dependencies": {
     "serve": "^14.2.4"
+  },
+  "devDependencies": {
+    "vitepress": "2.0.0-alpha.17"
   }
 }
